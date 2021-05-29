@@ -1,0 +1,93 @@
+footer {
+    background-color: $colorDark;
+    color: $colorWhite;
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    a {
+        color: $colorGreyLight;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: .25s;
+
+        &:hover {
+            color: $colorWhite;
+        }
+    }
+
+    .footer-line {
+        display: block;
+        background-color: $colorDarkBorder;
+        border-radius: 25px;
+        width: 3px;
+        height: 100px;
+    }
+
+    .footer-social-media {
+        font-size: 2rem;
+    }
+
+    .rev-block {
+        position: relative;
+        display: block;
+        width: 160px;
+        height: 60px;
+
+        img,
+        span {
+            transition: .7s;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:after {
+            content: '';
+            animation: none;
+        }
+
+        &.forwards:after {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background: #00f0b5;
+            animation: rev-block .7s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        }
+
+        &.reverse:after {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background: #00f0b5;
+            animation: rev-block .7s cubic-bezier(0.19, 1, 0.22, 1) reverse;
+        }
+    }
+}
+
+@keyframes rev-block {
+
+    0% {
+        left: 0;
+        width: 0%;
+    }
+
+    50% {
+        left: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+
+}

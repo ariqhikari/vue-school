@@ -1,0 +1,10 @@
+.scroll-button {
+    opacity: .75;
+    transition: .25s;
+
+    @include media-breakpoint-down(md) {
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

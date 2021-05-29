@@ -1,0 +1,57 @@
+.berita-item {
+    .card-img-top {
+        object-fit: cover;
+        height: 250px;
+    }
+
+    .card-body {
+        background: white;
+        margin-top: -60px;
+        width: 85%;
+
+        .berita-wrap-title {
+            height: 160px;
+
+            .berita-date {
+                font-size: 1.8rem;
+                color: $colorGreyLight;
+            }
+
+            .berita-title {
+                font-size: 1.7rem;
+
+                a {
+                    text-decoration: none;
+                    color: $colorBlack;
+                    transition: .25s;
+
+                    &:hover {
+                        box-shadow: 0 10px $colorYellowBorder;
+                    }
+                }
+            }
+
+            .berita-top-line {
+                display: block;
+                background-color: $colorGreyBorder;
+                border-radius: 25px;
+                width: 100px;
+                height: 3px;
+            }
+        }
+
+        .berita-bottom-line {
+            display: block;
+            background-color: $colorBlack;
+            border-radius: 25px;
+            width: 260px;
+            height: 3px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

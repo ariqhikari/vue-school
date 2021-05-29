@@ -1,0 +1,32 @@
+// Import Bootstrap 4 Library
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+@import "fonts";
+@import "colors";
+@import "global";
+
+@import "pages/home";
+@import "pages/jurusan";
+@import "pages/jurusan2";
+@import "pages/berita-acara";
+@import "pages/berita-detail";
+@import "pages/profile";
+@import "pages/my-profile";
+@import "pages/ekstrakurikuler";
+@import "pages/ekstrakurikuler-content";
+@import "pages/faq";
+@import "pages/template";
+
+@import "components/navbar";
+@import "components/footer";
+@import "components/button";
+@import "components/scroll-button";
+@import "components/modal";
+@import "components/jurusan-item";
+@import "components/vertical-bar";
+@import "components/horizontal-bar";
+@import "components/berita-item";
+@import "components/berita-terkini";
+@import "components/jurusan-color";
+@import "components/vue-carousel";
+@import "components/gallery-category";
+@import "components/faq-form";

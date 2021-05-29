@@ -1,0 +1,25 @@
+// Berita Terkini
+.berita-terkini {
+    position: relative;
+    margin-top: 0;
+
+    @include media-breakpoint-up(md) {
+        top: -80px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        top: -200px;
+    }
+
+    .hero-title {
+        h1 {
+            color: $colorBlueDark;
+            font-size: 2.3rem;
+
+            &::after {
+                background-color: $colorBlueBorder;
+                width: 170px;
+            }
+        }
+    }
+}

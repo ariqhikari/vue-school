@@ -1,0 +1,25 @@
+ .jurusan-item {
+
+        .thumbnail-jurusan {
+            position: relative;
+            z-index: 0;
+            color: $colorWhite;
+            height: 200px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: rgba(31, 44, 72, 0.8);
+                top: 0;
+                left: 0;
+                position: absolute;
+                z-index: -1;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }

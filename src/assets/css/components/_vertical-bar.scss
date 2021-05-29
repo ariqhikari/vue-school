@@ -1,0 +1,18 @@
+.vertical-bar {
+    .vertical-line {
+        display: block;
+        background-color: $colorGreyDark;
+        border-radius: 25px;
+        width: 3px;
+        height: 70%;
+        margin-top: 100px;
+    }
+
+    p {
+        transform-origin: 0;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-top: 15px;
+        margin-left: 13px;
+    }
+}

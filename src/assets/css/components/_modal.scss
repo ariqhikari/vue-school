@@ -1,0 +1,49 @@
+// Modal Content
+.modal-content {
+    background: transparent;
+    border: none;
+
+    h3 {
+        color: $colorDark;
+        font-size: 1.3rem;
+    }
+
+    p {
+        color: $colorGreyDark;
+    }
+
+    // Modal Header
+    .modal-header {
+        border-bottom: none;
+
+        button {
+            position: relative;
+            bottom: -30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: $colorDark;
+            color: $colorGreyLight;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            z-index: 1;
+            transition: .25s;
+            text-shadow: none;
+
+            &:hover,
+            &:focus {
+                opacity: 1 !important;
+                color: $colorWhite;
+            }
+        }
+    }
+
+    .modal-body {
+        background: $colorWhite;
+        border-radius: 10px;
+        width: 98%;
+        margin: auto;
+    }
+}

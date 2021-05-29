@@ -1,0 +1,56 @@
+.page-jurusan2 {
+
+    // Jurusan Content
+    .jurusan-content {
+        margin-top: 0;
+
+        .bg-jurusan {
+            position: relative;
+            z-index: -1;
+            height: 200px;
+
+            @include media-breakpoint-up(md) {
+                height: 350px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 500px;
+            }
+        }
+
+        .container {
+            position: relative;
+            top: -70px;
+
+            @include media-breakpoint-up(md) {
+                top: -180px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                top: -300px;
+            }
+
+            .hero-title {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                &.berita-acara-content-title {
+                    h1 {
+                        color: $colorBlack;
+                    }
+
+                    h4 {
+                        color: $colorGreyDark;
+                    }
+                }
+            }
+
+            .jurusan-desc {
+                color: $colorGreyDark;
+                font-size: 1.1rem;
+                line-height: 32px;
+            }
+        }
+    }
+}

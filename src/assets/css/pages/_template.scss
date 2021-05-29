@@ -1,0 +1,81 @@
+.page-template {
+
+    // Jumbotron
+    .jumbotron {
+        position: relative;
+        z-index: 0;
+        color: $colorWhite;
+        min-height: 500px;
+        background-size: cover !important;
+        background-position: center !important;
+        padding-top: 200px;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 250px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3));
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 2.8rem;
+            }
+
+            span.font-bold {
+                font-size: 3.3rem;
+            }
+        }
+
+        .scroll-button-wrap {
+            margin-top: 120px;
+
+            .scroll-button {
+                opacity: .75;
+            }
+        }
+    }
+
+    // Content
+    .template-content {
+        color: $colorGreyDark;
+        font-size: 1.1rem;
+        line-height: 32px;
+    }
+
+    // Berita
+    .berita {
+        .hero-title {
+            h1 {
+                color: $colorBlueDark;
+                font-size: 3rem;
+
+                &::after {
+                    background-color: $colorBlueBorder;
+                    width: 170px;
+                }
+            }
+        }
+    }
+
+    // Berita Terkini
+    .berita-terkini {
+        margin-top: -100px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+            top: -300px;
+        }
+    }
+}

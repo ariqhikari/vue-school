@@ -1,0 +1,182 @@
+.page-faq {
+
+    // Jumbotron
+    .jumbotron {
+        position: relative;
+        z-index: 0;
+        background: url(../img/bg/faq.jpg);
+        background-size: cover;
+        background-position: center;
+        color: $colorWhite;
+        padding-top: 100px;
+        min-height: 500px;
+
+        @include media-breakpoint-up(md) {
+            min-height: 650px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 600px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3));
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .container {
+            .logo-faq {
+                width: 100px;
+                height: 100px;
+
+                img {
+                    margin-top: -2px;
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+
+            h1 {
+                font-size: 1.8rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 2.2rem;
+                }
+            }
+
+            .input-search {
+                width: 100%;
+                background: $colorWhite;
+                color: $colorGreyDark;
+                font-size: 1.2rem;
+                padding: 10px 20px;
+                border-radius: 10px;
+                transition: .25s;
+
+                &.active {
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
+                input,
+                button {
+                    box-shadow: none;
+                }
+
+                button {
+                    color: $colorDark;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .card-search {
+                color: $colorDark;
+
+                .card-faq {
+                    h5 {
+                        transition: .25s;
+                    }
+
+                    &:hover h5 {
+                        opacity: .75;
+                    }
+                }
+            }
+        }
+    }
+
+    // Faq Ask
+    .faq-ask {
+        transition: .25s;
+
+        &.faq-search {
+            margin-top: 0px;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: -150px;
+        }
+
+        .card {
+            border-radius: 10px;
+
+            .ask-icon {
+                background-color: $colorDark;
+                color: $colorWhite;
+                min-height: 150px;
+                border-radius: 10px 10px 0 0;
+
+                @include media-breakpoint-up(md) {
+                    border-radius: 10px 0 0 10px;
+                }
+
+                .bg-white {
+                    color: $colorDark;
+                    width: 50px;
+                    height: 50px;
+
+                    svg {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            .ask-content {
+                border-radius: 0 0 10px 10px;
+
+                @include media-breakpoint-up(md) {
+                    border-radius: 0 10px 10px 0;
+                }
+
+                .card-title {
+                    color: $colorDark;
+                    font-size: 1.4rem;
+                }
+
+                .card-text {
+                    color: $colorGreyDark;
+                }
+            }
+        }
+    }
+
+    // Faq Content
+    .faq-content {
+        margin-top: 50px;
+
+        .faq-item {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+            border-radius: 10px;
+
+            svg {
+                font-size: 1rem;
+            }
+
+            .faq-button {
+                color: $colorDark;
+                text-decoration: none;
+                font-size: 1.2rem;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .faq-collapse {
+                margin-top: -20px;
+                border-radius: 0 0 10px 10px;
+
+                p {
+                    color: $colorGreyDark;
+                }
+            }
+        }
+    }
+}

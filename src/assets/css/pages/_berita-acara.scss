@@ -1,0 +1,81 @@
+.page-berita-acara {
+
+    // Berita Acara
+    .berita-acara {
+        position: relative;
+        margin-top: 0;
+
+        .bg-jurusan {
+            position: relative;
+            z-index: -1;
+            height: 400px;
+
+            @include media-breakpoint-up(md) {
+                height: 500px;
+            }
+        }
+
+        .container-jumbotron {
+            position: relative;
+            top: -270px;
+
+            @include media-breakpoint-up(md) {
+                top: -350px;
+            }
+
+            h1.text-white {
+                font-size: 2.3rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 3rem;
+                }
+            }
+
+            .hero-title {
+                h1 {
+                    font-size: 3rem;
+
+                    &::after {
+                        background-color: $colorBlueBorder;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .berita-acara-parallax {
+            top: 80%;
+        }
+    }
+
+    // Berita
+    .berita {
+        .hero-title {
+            h1 {
+                color: $colorGreenLight;
+                font-size: 3rem;
+
+                &::after {
+                    width: 170px;
+                    background-color: $colorGreenBorder;
+                }
+            }
+        }
+    }
+
+    // Acara Upcoming
+    .acara-upcoming {
+        margin-top: 50px;
+
+        .hero-title {
+            h1 {
+                color: $colorYellowLight;
+                font-size: 3rem;
+
+                &::after {
+                    background-color: $colorYellowBorder;
+                }
+            }
+        }
+    }
+}

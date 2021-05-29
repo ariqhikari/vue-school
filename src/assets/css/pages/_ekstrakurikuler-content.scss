@@ -1,0 +1,88 @@
+.page-ekstrakurikuler {
+
+    // Ekstrakurikuler Content
+    .ekstrakurikuler-content {
+        position: relative;
+        margin-top: 200px;
+
+        .container {
+            .hero-title {
+                h1 {
+                    color: $colorBlueDark;
+                    font-size: 2.5rem;
+
+                    &::after {
+                        background-color: $colorBlueBorder;
+                    }
+                }
+            }
+
+            .eskul-detail {
+                margin-top: 100px;
+
+                .eskul-umum-item {
+                    color: $colorGreyDark;
+
+                    .eskul-logo {
+                        width: 200px;
+                        height: 200px;
+                        overflow: hidden;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    h3 {
+                        color: $colorDark;
+                        font-size: 2.5rem;
+                    }
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+
+        .vertical-bar {
+            .vertical-line {
+                margin-top: 0;
+                height: 70%;
+            }
+        }
+    }
+
+    // Ekstrakurikuler Prev Next
+    .ekstrakurikuler-prev-next {
+        position: relative;
+        margin-top: 50px;
+
+        .container {
+            .eskul-detail {
+                margin-top: 100px;
+
+                .eskul-umum-item {
+                    color: $colorDark;
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    h4 {
+                        color: $colorGreyDark;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

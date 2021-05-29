@@ -1,0 +1,303 @@
+.page-profile {
+
+    // Jumbotron Profile
+    .jumbotron-profile {
+        position: relative;
+        z-index: 0;
+        background: url(../img/bg/profile.jpeg);
+        background-size: cover;
+        background-position: center;
+        color: $colorWhite;
+        min-height: 500px;
+        padding-top: 200px;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 250px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3));
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 3rem;
+            }
+
+            span.font-bold {
+                font-size: 3.3rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        .scroll-button-wrap {
+            margin-top: 100px;
+
+            @include media-breakpoint-up(xl) {
+                margin-top: 200px;
+            }
+        }
+    }
+
+    // Kepala Sekolah
+    .kepala-sekolah {
+        position: relative;
+        background-color: $colorBlueLight;
+        color: $colorWhite;
+        margin-top: 0;
+        z-index: 0;
+
+        .container {
+            .kepala-sekolah-name {
+                text-align: center;
+
+                @include media-breakpoint-up(md) {
+                    text-align: left;
+                }
+            }
+
+            .kepala-sekolah-line {
+                display: block;
+                background-color: $colorBlueBorder;
+                border-radius: 25px;
+                margin: 0 auto;
+                width: 50px;
+                height: 3px;
+            }
+
+            img.rounded-circle {
+                object-fit: cover;
+                width: 170px;
+                height: 170px;
+            }
+        }
+
+        .kepala-sekolah-parallax {
+            left: 5%;
+
+            h1 {
+                color: #0078BE;
+            }
+        }
+    }
+
+    // Tentang
+    .tentang {
+        position: relative;
+
+        .container {
+            .hero-title {
+                h1 {
+                    color: $colorBlueDark;
+                    font-size: 2.5rem;
+
+                    &::after {
+                        background-color: $colorBlueBorder;
+                    }
+                }
+            }
+
+            .vertical-bar {
+                .vertical-line {
+                    margin-top: 80px;
+                }
+            }
+
+            .tentang-content {
+                position: relative;
+                margin-top: 100px;
+
+                .tentang-gambar {
+                    position: absolute;
+                    z-index: -1;
+                    height: 100%;
+                    background-image: url(../img/bg/home.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 10px;
+                    width: 70%;
+
+                    @include media-breakpoint-up(lg) {
+                        width: 50%;
+                    }
+                }
+
+                .card {
+                    color: $colorGreyDark;
+                    border-radius: 10px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+    // Sejarah
+    .sejarah {
+        position: relative;
+        z-index: 0;
+        background: url(../img/bg/profile.jpeg);
+        background-size: cover;
+        background-position: center;
+        color: $colorWhite;
+        min-height: 500px;
+        margin-top: 100px;
+        padding-top: 100px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 44, 72, 0.8);
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    // Moto
+    .moto {
+        .hero-title {
+            h1 {
+                color: $colorGreenLight;
+                font-size: 2.5rem;
+
+                &::after {
+                    background-color: $colorGreenBorder;
+                    width: 100px;
+                }
+            }
+        }
+
+        .moto-content {
+            margin-top: 100px;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                color: $colorGreyDark;
+                line-height: 35px;
+
+                span {
+                    color: $colorBlack;
+                }
+            }
+        }
+
+        .vertical-bar {
+            .vertical-line {
+                margin-top: 80px;
+                height: 250px;
+            }
+        }
+    }
+
+    // Gallery
+    .gallery {
+        .hero-title {
+            h1 {
+                color: $colorBlueDark;
+                font-size: 2.5rem;
+
+                &::after {
+                    background-color: $colorBlueBorder;
+                    width: 140px;
+                }
+            }
+        }
+
+        .gallery-content {
+            margin-top: 100px;
+
+            .gallery-item {
+                cursor: pointer;
+                transition: .25s;
+
+                &:hover {
+                    opacity: .75;
+                }
+
+                img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                    height: 250px;
+
+                    @include media-breakpoint-up(lg) {
+                        height: 300px;
+                    }
+                }
+            }
+
+            .gallery-main {
+                img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                    transition: .25s;
+                    height: 500px;
+
+                    @include media-breakpoint-up(lg) {
+                        height: 600px;
+                    }
+                }
+            }
+        }
+
+        .vertical-bar {
+            .vertical-line {
+                margin-top: 0;
+                height: 700px;
+            }
+        }
+    }
+
+    // Media Partner
+    .media-partner {
+        .hero-title {
+            h1 {
+                color: $colorBlueDark;
+                font-size: 2.5rem;
+
+                &::after {
+                    background-color: $colorBlueBorder;
+                    width: 140px;
+                    margin: 15px auto;
+                }
+            }
+        }
+
+        img {
+            opacity: .5;
+            transition: .25s;
+            filter: grayscale(100%);
+
+            &:hover {
+                opacity: 1;
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    footer {
+        margin-top: 0 !important;
+    }
+}

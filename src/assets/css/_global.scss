@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $colorBlueLight;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $colorWhite;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $poppins;
+    background-image: url(../img/bg/pattern.png);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img[lazy=loading] {
+    background-color: $colorGreyLight;
+}
+
+img[lazy=error] {
+    background-color: $colorOrangeDark;
+}
+
+section {
+    margin-top: 100px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 32px;
+}
+
+.hero-title {
+    h1 {
+        display: inline-block;
+        font-size: 4rem;
+        letter-spacing: -2px;
+
+        &::after {
+            content: "";
+            position: relative;
+            display: block;
+            margin-top: 15px;
+            margin-left: auto;
+            width: 200px;
+            height: 3px;
+            border-radius: 25px;
+        }
+    }
+}
+
+.parallax {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 0;
+    line-height: .8;
+    letter-spacing: -0.05em;
+    z-index: -1;
+    transition: transform 300ms ease-out;
+
+    h1 {
+        color: #F6F6F6;
+        font-size: 10rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 15rem;
+        }
+    }
+}

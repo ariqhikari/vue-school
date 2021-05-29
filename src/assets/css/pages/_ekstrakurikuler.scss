@@ -1,0 +1,89 @@
+.page-ekstrakurikuler {
+    &.nav-bg {
+        .navbar {
+            background-color: #1f2c48f3;
+        }
+    }
+
+    // Pendahuluan
+    .pendahuluan {
+        position: relative;
+        margin-top: 0;
+        top: -180px;
+
+        @include media-breakpoint-up(md) {
+            top: -300px;
+        }
+
+        .container {
+            .hero-title {
+                h1 {
+                    color: $colorBlueDark;
+                    font-size: 2.5rem;
+
+                    &::after {
+                        background-color: $colorBlueBorder;
+                    }
+                }
+            }
+
+            .pendahuluan-content {
+                color: $colorGreyDark;
+                margin-top: 50px;
+            }
+        }
+
+        .vertical-bar {
+            .vertical-line {
+                margin-top: 80px;
+                height: 150px;
+            }
+        }
+    }
+
+    // Eskul Umum
+    .eskul-umum {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 100px;
+        top: -150px;
+
+        @include media-breakpoint-up(md) {
+            top: -270px;
+        }
+
+        .container {
+            .hero-title {
+                h1 {
+                    color: $colorBlueDark;
+                    font-size: 2.5rem;
+
+                    &::after {
+                        background-color: $colorBlueBorder;
+                    }
+                }
+            }
+        }
+
+        .eskul-umum-item {
+            color: $colorDark;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            h4 {
+                color: $colorGreyDark;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .vertical-bar {
+        .vertical-line {
+            margin-top: 0;
+            height: 70%;
+        }
+    }
+}

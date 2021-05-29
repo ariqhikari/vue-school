@@ -1,0 +1,23 @@
+.page-my-profile {
+    img {
+        object-fit: cover;
+    }
+
+    .jumbotron-profile {
+        width: 100%;
+        height: 800px;
+        margin-top: -500px;
+        background-color: $colorBlueDark;
+    }
+
+    .tab-active {
+        &.nav-link {
+            color: white !important;
+            font-weight: 600;
+
+            &.active {
+                background-color: $colorBlueDark;
+            }
+        }
+    }
+}

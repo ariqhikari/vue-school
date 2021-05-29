@@ -1,0 +1,68 @@
+.gallery-category {
+    position: relative;
+    margin-top: 0;
+
+    &.template2 {
+        top: -230px;
+
+        @include media-breakpoint-up(md) {
+            top: -320px;
+        }
+    }
+
+    .vue-gallery {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 100%;
+
+        .gallery-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: 0.25s;
+        }
+
+        &:hover>.gallery-image {
+            transform: scale(1.2);
+        }
+
+        .gallery-first {
+            height: 250px !important;
+
+            @include media-breakpoint-up(md) {
+                height: 520px !important;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 350px !important;
+            }
+        }
+
+        .more-image {
+            position: relative;
+            height: 100%;
+
+            .more-number {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+.vgs__container {
+    top: 50%;
+    background: transparent !important;
+
+    @include media-breakpoint-up(md) {
+        top: 17%;
+    }
+}
